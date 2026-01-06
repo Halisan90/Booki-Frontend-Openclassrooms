@@ -16,6 +16,7 @@
 body {
   display: flex;
   justify-content: center;
+  font-family: "Raleway", sans-serif;
 }
 
 .main-container {
@@ -61,7 +62,7 @@ a {
 /****** Logo et barre de navigation ******/
 
 header img {
-  width: 100px;
+  height: 19px;
   padding: 25px 0px;
 }
 
@@ -69,6 +70,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1px;
+  margin-bottom: 3%;
 }
 
 header nav ul {
@@ -76,15 +78,113 @@ header nav ul {
   gap: 60px;
   list-style-type: none;
 }
-header nav ul li {
+header nav ul li a {
   padding-bottom: 10px;
   border-top: 3px solid transparent;
   transition: border-color 0.3s;
   padding: 15px 5px;
+  font-size: 16px;
 }
-header nav ul li:hover {
+header nav ul li a:hover {
   border-color: blue;
   color: blue;
+  cursor: pointer;
+}
+
+/******Titre et introduction******/
+
+.section-title {
+  font-size: 22px;
+}
+.title-subtitle {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/******Formuilaire de recherche******/
+.search-box {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+.search-box input::placeholder {
+  color: black;
+  opacity: 1; /* important : sinon il reste gris */
+}
+
+.search-box .fa-map-marker-alt {
+  font-size: 22px;
+  background-color: #f2f2f2;
+  border-radius: 16px 0px 0px 16px;
+  padding: 10px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box input {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+  border-right: #0065fc;
+  text-align: center;
+}
+
+.search-box button {
+  background: #0065fc;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0px 16px 16px 0px;
+  border: none;
+  font-weight: bold;
+  padding: 15px 15px;
+}
+.fa-search {
+  display: none;
+}
+
+/****** Filtres et infos *******/
+.filtres {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.filtres h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.filter-box {
+  border: 2px solid;
+  border-radius: 30px;
+  border-color: #d9d9d9;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 17px;
+}
+
+.filter-box:hover {
+  cursor: pointer;
+  background-color: #deebff;
+}
+.fa-person {
+  color: blue;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 /****** Hebergements And Populaires ***********/

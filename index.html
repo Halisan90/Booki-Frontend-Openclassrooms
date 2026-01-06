@@ -39,33 +39,53 @@
       <main>
         <!--Nouvelle section de recherche et filtres-->
         <section>
-          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre-ville ou en pleine nature</p>
+          <div class="title-subtitle">
+            <h1 class="section-title">
+              Trouvez votre hébergement pour des vacances de rêve
+            </h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+          </div>
 
           <!--Formulaire de recherche-->
           <form>
-            <div>
+            <div class="search-box">
               <i class="fas fa-map-marker-alt"></i>
               <input type="text" placeholder="Marseille, France" />
               <button>
-                <span>Rechercher</span>
+                <span class="recherche">Rechercher</span>
+                <i class="fas fa-search"></i>
               </button>
             </div>
           </form>
 
           <!--Partie Filtres-->
-          <div>
+          <section class="filtres">
             <h2>Filtres</h2>
-            <ul>
-              <li>Economique</li>
-              <li>Familial</li>
-              <li>Romantique</li>
-              <li>Nos pétites</li>
-            </ul>
-          </div>
-          <div>
+
+            <span class="filter-box">
+              <i class="fa-solid fa-money-bill-wave"></i>
+              <span class="text"> Économique </span>
+            </span>
+
+            <span class="filter-box">
+              <i class="fas fa-person"> </i>
+              <span class="text"> Familial </span>
+            </span>
+
+            <span class="filter-box">
+              <i class="fa-solid fa-heart"></i>
+              <span class="text"> Romantique </span>
+            </span>
+
+            <span class="filter-box">
+              <i class="fa-solid fa-fire"></i>
+              <span class="text"> Nos pétites </span>
+            </span>
+          </section>
+
+          <div class="info">
             <i class="fa-solid fa-circle-info"></i>
-            <p>Plus de 500 logements sont disponibles dans cette villes</p>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
         </section>
 
