@@ -350,6 +350,31 @@ header nav ul li a:hover {
   margin-bottom: 30px;
 }
 
+.section-activites .card-content .card-title {
+  margin-left: 0px;
+}
+
+/****** footer *******/
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20%; /* espace ENTRE les colonnes */
+  background: var(--main-bg-color);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-section h4 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/

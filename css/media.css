@@ -1,0 +1,72 @@
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1024px) {
+  /******* Section filtre ********/
+
+  .filtres {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .filtres h2 {
+    margin: 10px; /* inchangé => même place visuelle */
+    flex: 0 0 100%; /* prend toute la première ligne */
+  }
+
+  .filter-box {
+    /* on garde toutes tes propriétés, on ne change rien */
+  }
+
+  /******* Section hébergement ******/
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
+  .hebergements {
+    width: 100%;
+  }
+
+  /****** Section Populaire *******/
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .populaires-cards a {
+    width: 30%;
+  }
+
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
+
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
+
+  /******* Section Activités *******/
+
+  .activites-cards img {
+    height: 200px;
+  }
+  .activites-cards .card-content {
+    white-space: initial;
+  }
+  .activites-cards .card {
+    height: 100%;
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* ... */
+}
