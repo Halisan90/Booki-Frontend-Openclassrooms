@@ -110,6 +110,7 @@
     padding: 0;
     list-style: none;
     position: relative;
+    width: 100%;
   }
 
   /* ligne grise continue */
@@ -124,6 +125,14 @@
     z-index: 0;
   }
 
+  header nav ul {
+    gap: 0;
+    width: 100%;
+  }
+
+  .anchor-container {
+    width: 100%;
+  }
   .anchor-container li {
     flex: 1;
     text-align: center;
@@ -142,6 +151,14 @@
     z-index: 2;
   }
 
+  header nav ul li a {
+    border-top: none;
+  }
+
+  header nav ul li a:hover {
+    border-top: none;
+    color: black;
+  }
   .anchor-container a {
     display: block;
     padding: 16px 0;
@@ -201,13 +218,21 @@
   }
 
   .filters {
-    gap: 12px;
     justify-content: center;
+    gap: 12px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  .filters h2 {
+    flex: 0 0 100%;
+    margin-left: 20px;
   }
 
   .filter-box {
     flex: 0 0 calc(50% - 6px);
-    max-width: 170px;
+    max-width: calc(50% - 6px);
     height: 50px;
     margin: 0;
     display: flex;
