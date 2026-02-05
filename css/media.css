@@ -68,7 +68,7 @@
     padding: 20px;
     display: flex;
     justify-content: flex-start;
-    gap: 150px; /* espace ENTRE les colonnes */
+    gap: 150px;
     background: var(--main-bg-color);
   }
 }
